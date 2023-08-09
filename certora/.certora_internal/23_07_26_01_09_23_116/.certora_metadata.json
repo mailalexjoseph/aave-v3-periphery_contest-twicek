@@ -1,0 +1,25 @@
+{
+    "CLI_version": "4.5.1",
+    "branch": "certora",
+    "conf": {
+        "files": [
+            "../contracts/rewards/RewardsController.sol:RewardsController"
+        ],
+        "msg": "test",
+        "process": "emv",
+        "verify": "RewardsController:specs/RewardsController_base.spec"
+    },
+    "cwd_relative": "certora",
+    "dirty": true,
+    "origin": "https://github.com/twicek/aave-v3-periphery_contest.git",
+    "raw_args": [
+        "/home/seyni/.local/bin/certoraRun",
+        "../contracts/rewards/RewardsController.sol:RewardsController",
+        "--verify",
+        "RewardsController:specs/RewardsController_base.spec",
+        "--msg",
+        "test"
+    ],
+    "revision": "d17e129884b1d864b6c459ab6a61ba5cc6bb3ce8",
+    "timestamp": "1690319363.7844"
+}

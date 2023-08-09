@@ -1,0 +1,30 @@
+Saving last configuration file to .certora_internal/23_08_09_03_52_52_886/run.conf
+contract name RewardsControllerHarness is the same as the file name and can be omitted from certora/harness/RewardsControllerHarness.sol:RewardsControllerHarness
+There is no TAC file. Going to script EVMVerifier/certoraBuild.py to main_with_args()
+Creating dir /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/.certora_internal/23_08_09_03_52_52_886/.certora_config
+In /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/specs/RewardsController_base.spec, found the imports: [('methods/Methods_base.spec', '1:1')]
+In /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/specs/methods/Methods_base.spec, found the imports: [('./ERC20_methods.spec', '1:1')]
+In /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/specs/methods/ERC20_methods.spec, found the imports: []
+copying spec file /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/specs/RewardsController_base.spec to /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/.certora_internal/23_08_09_03_52_52_886/.certora_sources/.0_RewardsController_base.spec.spec
+In /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/specs/RewardsController_base.spec, found the imports: [('methods/Methods_base.spec', '1:1')]
+In /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/specs/methods/Methods_base.spec, found the imports: [('./ERC20_methods.spec', '1:1')]
+In /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/specs/methods/ERC20_methods.spec, found the imports: []
+writing /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/.certora_internal/23_08_09_03_52_52_886/.certora_verify.json
+writing /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/.certora_internal/23_08_09_03_52_52_886/.certora_verify.cvl1.json
+Path to typechecker is /home/seyni/.local/lib/python3.10/site-packages/certora_jars/Typechecker.jar
+running ['java', '-jar', '/home/seyni/.local/lib/python3.10/site-packages/certora_jars/Typechecker.jar', '-buildDirectory', '/mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/.certora_internal/23_08_09_03_52_52_886']
+Failed to compile spec file in /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/.certora_internal/23_08_09_03_52_52_886
+Found errors
+[main] ERROR ALWAYS - Error in spec file (RewardsController_base.spec:326:40): Syntax error: unexpected token near `;`
+Path to typechecker is /home/seyni/.local/lib/python3.10/site-packages/certora_jars/Typechecker.3.6.5.jar
+running ['java', '-jar', '/home/seyni/.local/lib/python3.10/site-packages/certora_jars/Typechecker.3.6.5.jar', '-v', '.certora_internal/23_08_09_03_52_52_886/.certora_verify.cvl1.json', '-d', '.certora_internal/23_08_09_03_52_52_886']
+Execution of command "java -jar /home/seyni/.local/lib/python3.10/site-packages/certora_jars/Typechecker.3.6.5.jar -v .certora_internal/23_08_09_03_52_52_886/.certora_verify.cvl1.json -d .certora_internal/23_08_09_03_52_52_886" terminated with exitcode 1.
+[main] ERROR ALWAYS - certora/specs/RewardsController_base.spec:1:35: Syntax error: unexpected token near ;
+[main] ERROR ALWAYS - certora/specs/RewardsController_base.spec:1:35: Couldn't repair and continue parse unexpected token near ;
+[main] ERROR ALWAYS - CVL parser failed with exception. Exception message: "Failed to parse certora/specs/RewardsController_base.spec. Exiting."
+spec.CVLAstBuilder$CVLParsingException: java.lang.Exception: Failed to parse certora/specs/RewardsController_base.spec. Exiting.
+build failed
+Failure traceback: 
+Shared.certoraUtils.CertoraUserInputError: CVL specification syntax check failed
+Encountered an error running Certora Prover:
+CVL specification syntax check failed

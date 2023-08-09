@@ -1,0 +1,28 @@
+{
+    "CLI_version": "4.5.1",
+    "branch": "certora",
+    "conf": {
+        "files": [
+            "certora/harness/RewardsControllerHarness.sol:RewardsControllerHarness",
+            "certora/harness/rewards/TransferStrategyMultiRewardHarness.sol",
+            "certora/harness/tokens/DummyERC20_AToken.sol",
+            "certora/harness/tokens/DummyERC20_rewardToken.sol",
+            "certora/harness/tokens/DummyERC20_rewardTokenB.sol"
+        ],
+        "loop_iter": "2",
+        "msg": "RewardsController full configuration with multi-rewards",
+        "optimistic_loop": true,
+        "process": "emv",
+        "rule_sanity": "basic",
+        "verify": "RewardsControllerHarness:certora/specs/RewardsController_multiReward_verified.spec"
+    },
+    "cwd_relative": ".",
+    "dirty": true,
+    "origin": "https://github.com/twicek/aave-v3-periphery_contest.git",
+    "raw_args": [
+        "/home/seyni/.local/bin/certoraRun",
+        "certora/conf/verifyRewardsController_multiReward_verified.conf"
+    ],
+    "revision": "d17e129884b1d864b6c459ab6a61ba5cc6bb3ce8",
+    "timestamp": "1691541056.302"
+}
