@@ -106,7 +106,7 @@ using DummyERC20_rewardToken as reward;
         assert balanceBefore == balanceAfter;
     }
 
-    // BUG 3
+    // BUG 3 (this one might be slow but should work)
     rule accruedRewardsSent() {
         env e;
 
@@ -355,7 +355,7 @@ using DummyERC20_rewardToken as reward;
     }
 
     // OTHER
-    
+
     // global index is capped
     rule checkIndexIsCapped() {
         env e;
@@ -401,13 +401,13 @@ using DummyERC20_rewardToken as reward;
         require _rewardsList[0] == reward;
 
 
-        //Get rewardData
+        //Get rewardData before
         indexBefore, emissionPerSecondBefore, lastUpdateTimestampBefore, distributionEndBefore = getRewardsData(e, AToken, reward);
 
         //Update rewards
         claimAllRewards(e, assets, e.msg.sender);
 
-        //Get informations at block e2
+        //Get rewardData after
         indexAfter, emissionPerSecondAfter, lastUpdateTimestampAfter, distributionEndAfter = getRewardsData(e, AToken, reward);
 
         //global index is updated

@@ -211,7 +211,8 @@ using DummyERC20_rewardToken as reward;
     //     env e2;
 
     //     // ADD ENV CONDITIONS SINGLE AND DOUBLE BLOCK
-    //     two_env_conditions(e, e2);
+    //     require e.msg.sender == e2.msg.sender;
+    //     require e2.block.timestamp > e.block.timestamp;
 
     //     uint256 indexBefore;
     //     uint256 indexAfter;
