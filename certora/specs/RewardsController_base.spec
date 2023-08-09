@@ -353,8 +353,6 @@ using DummyERC20_rewardToken as reward;
     //     assert accrued == 0;
     // }
 
-    //Both rewards are claimed
-
 
 
 
