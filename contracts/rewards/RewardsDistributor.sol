@@ -299,7 +299,7 @@ abstract contract RewardsDistributor is IRewardsDistributor {
     (uint256 oldIndex, uint256 newIndex) = _getAssetIndex(rewardData, totalSupply, assetUnit);
     bool indexUpdated;
     if (newIndex != oldIndex) {
-      // require(newIndex <= type(uint104).max, 'INDEX_OVERFLOW');
+      require(newIndex <= type(uint104).max, 'INDEX_OVERFLOW');
       indexUpdated = true;
 
       //optimization: storing one after another saves one SSTORE
