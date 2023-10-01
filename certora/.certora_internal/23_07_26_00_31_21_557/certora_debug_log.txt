@@ -1,0 +1,76 @@
+Saving last configuration file to .certora_internal/23_07_26_00_31_21_557/run.conf
+contract name RewardsController is the same as the file name and can be omitted from ../contracts/rewards/RewardsController.sol:RewardsController
+Default package file package.json not found, external contract dependencies could be unresolved. Ignore if solc invocation was successful
+Default package file remappings.txt not found, external contract dependencies could be unresolved. Ignore if solc invocation was successful
+There is no TAC file. Going to script EVMVerifier/certoraBuild.py to main_with_args()
+Creating dir /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/.certora_internal/23_07_26_00_31_21_557/.certora_config
+In /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/specs/RewardsController_base.spec, found the imports: [('methods/Methods_base.spec', '1:1')]
+In /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/specs/methods/Methods_base.spec, found the imports: [('./ERC20_methods.spec', '1:1')]
+In /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/specs/methods/ERC20_methods.spec, found the imports: []
+copying spec file /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/specs/RewardsController_base.spec to /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/.certora_internal/23_07_26_00_31_21_557/.certora_sources/.0_RewardsController_base.spec.spec
+In /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/specs/RewardsController_base.spec, found the imports: [('methods/Methods_base.spec', '1:1')]
+In /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/specs/methods/Methods_base.spec, found the imports: [('./ERC20_methods.spec', '1:1')]
+In /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/specs/methods/ERC20_methods.spec, found the imports: []
+writing /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/.certora_internal/23_07_26_00_31_21_557/.certora_verify.json
+writing /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/.certora_internal/23_07_26_00_31_21_557/.certora_verify.cvl1.json
+Path to typechecker is /home/seyni/.local/lib/python3.10/site-packages/certora_jars/Typechecker.jar
+running ['java', '-jar', '/home/seyni/.local/lib/python3.10/site-packages/certora_jars/Typechecker.jar', '-buildDirectory', '/mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/.certora_internal/23_07_26_00_31_21_557']
+
+building file ../contracts/rewards/RewardsController.sol
+relevant solc is /home/seyni/.local/bin/solc
+about to run in /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora the command: /home/seyni/.local/bin/solc -o "/mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/.certora_internal/23_07_26_00_31_21_557/.certora_config/RewardsController.sol_0/" --overwrite --allow-paths "/mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora",. --standard-json
+solc input = {
+    "language": "Solidity",
+    "sources": {
+        "/mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/contracts/rewards/RewardsController.sol": {
+            "urls": [
+                "/mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/contracts/rewards/RewardsController.sol"
+            ]
+        }
+    },
+    "settings": {
+        "remappings": [],
+        "outputSelection": {
+            "*": {
+                "*": [
+                    "storageLayout",
+                    "abi",
+                    "evm.bytecode",
+                    "evm.deployedBytecode",
+                    "evm.methodIdentifiers",
+                    "evm.assembly"
+                ],
+                "": [
+                    "id",
+                    "ast"
+                ]
+            }
+        }
+    }
+}
+Running cmd /home/seyni/.local/bin/solc -o "/mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/.certora_internal/23_07_26_00_31_21_557/.certora_config/RewardsController.sol_0/" --overwrite --allow-paths "/mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora",. --standard-json
+stdout, stderr = /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/.certora_internal/23_07_26_00_31_21_557/.certora_config/RewardsController.sol_0.standard.json.stdout, /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/.certora_internal/23_07_26_00_31_21_557/.certora_config/RewardsController.sol_0.standard.json.stderr
+Exitcode 0
+Solc run /home/seyni/.local/bin/solc -o "/mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/.certora_internal/23_07_26_00_31_21_557/.certora_config/RewardsController.sol_0/" --overwrite --allow-paths "/mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora",. --standard-json time: 0.0591
+Collecting standard json: /home/seyni/.local/bin/solc -o "/mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/.certora_internal/23_07_26_00_31_21_557/.certora_config/RewardsController.sol_0/" --overwrite --allow-paths "/mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora",. --standard-json
+reading standard json data from /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/certora/.certora_internal/23_07_26_00_31_21_557/.certora_config/RewardsController.sol_0.standard.json.stdout
+Error: standard-json invocation of solc encountered an error: {'component': 'general', 'errorCode': '5333', 'formattedMessage': 'ParserError: Source file requires different compiler version (current compiler is 0.8.0+commit.c7dfd78e.Linux.g++) - note that nightly builds are considered to be strictly less than the released version\n --> /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/contracts/rewards/RewardsController.sol:2:1:\n  |\n2 | pragma solidity ^0.8.10;\n  | ^^^^^^^^^^^^^^^^^^^^^^^^\n\n', 'message': 'Source file requires different compiler version (current compiler is 0.8.0+commit.c7dfd78e.Linux.g++) - note that nightly builds are considered to be strictly less than the released version', 'severity': 'error', 'sourceLocation': {'end': 61, 'file': '/mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/contracts/rewards/RewardsController.sol', 'start': 37}, 'type': 'ParserError'}
+build failed
+Failure traceback: 
+Shared.certoraUtils.CertoraUserInputError: /home/seyni/.local/bin/solc had an error:
+ParserError: Source file requires different compiler version (current compiler is 0.8.0+commit.c7dfd78e.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/contracts/rewards/RewardsController.sol:2:1:
+  |
+2 | pragma solidity ^0.8.10;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Encountered an error running Certora Prover:
+/home/seyni/.local/bin/solc had an error:
+ParserError: Source file requires different compiler version (current compiler is 0.8.0+commit.c7dfd78e.Linux.g++) - note that nightly builds are considered to be strictly less than the released version
+ --> /mnt/c/Users/Seyni/Documents/scsec/projects/aave-v3-periphery_contest/contracts/rewards/RewardsController.sol:2:1:
+  |
+2 | pragma solidity ^0.8.10;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+
