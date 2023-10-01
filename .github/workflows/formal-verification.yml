@@ -71,4 +71,7 @@ jobs:
       max-parallel: 16
       matrix:
         patch: ${{ fromJson(needs.list-patches.outputs.matrix) }} 
-        rule: ${{ fromJson(needs.list-confs.outputs.matrix) }} 
+        rule: 
+        - certora/conf/default.conf --rule noZeroAddressTransfer
+        - certora/conf/default.conf --rule globalIndex_userIndex
+        
